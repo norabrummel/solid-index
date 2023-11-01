@@ -27,11 +27,11 @@ export const ResourceForm = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-y-4 mt-16">
-                <div className='flex flex-col gap-1'>
+            <form property="hasPart" typeOf="ShareAction" onSubmit={handleSubmit} className="w-full flex flex-col gap-y-4 mt-16">
+                <div property='name' className='flex flex-col gap-1'>
                     <label htmlFor="title" className='text-sm font-medium'>Resource Title</label>
                     <input
-                        required
+                        required={true}
                         id="title"
                         name='title'
                         type="text"
@@ -41,10 +41,10 @@ export const ResourceForm = () => {
                         className=' rounded-lg bg-neutral-100 py-1 px-2 placeholder:text-sm placeholder:text-neutral-600'
                     />
                 </div>
-                <div className='flex flex-col'>
+                <div property='url' className='flex flex-col'>
                     <label htmlFor="url" className='text-sm font-medium'>Resource URL</label>
                     <input
-                        required
+                        required={true}
                         id="url"
                         name='url'
                         type="url"
@@ -62,7 +62,7 @@ export const ResourceForm = () => {
                         </datalist>
                     )}
                 </div>
-                <div className='flex flex-col'>
+                <div property='description' className='flex flex-col'>
                     <label htmlFor="description" className='text-sm font-medium'>Resource Description (optional)</label>
                     <textarea
                         id="description"

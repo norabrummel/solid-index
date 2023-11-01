@@ -8,7 +8,7 @@ export const Join = () => {
   const navigate = useNavigate()
   return (
     <>
-      <button className='mb-4 font-medium' onClick={() => navigate('/solid-index/')}><ArrowUpLeftIcon className='w-4' strokeWidth={2} /> <div>Home</div></button>
+      <button property="hasPart" typeof="SiteNavigationElement" className='mb-4 font-medium' onClick={() => navigate('/solid-index/')}><ArrowUpLeftIcon className='w-4' strokeWidth={2} /> <div>Home</div></button>
       <Heading>Link your Data</Heading>
       <div property="description" className="mt-8 font-medium">
         Using the form below, you can link your own resources from a Solid Pod. In order to do so, please provide a title and the URL to your resource. 
