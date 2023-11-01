@@ -23,13 +23,15 @@ export const Modal = () => {
       <div
         className="fixed top-0 left-0 h-screen 3xl:h-full w-full flex flex-col items-center justify-center z-50"
         style={{
-          background: "rgba(0,0,0,0.7)",
-          backdropFilter: "blur(6px)"
+          background: "rgba(0,0,0,0.2)",
+          backdropFilter: "blur(2px)"
         }}
       >
-        <button className="self-end m-1 rounded p-[0.125rem] hover:bg-lumogray-50/20" onClick={() => setModal(false)}><XMarkIcon className="w-5 text-lumogray-200" strokeWidth={3} /></button>
-        <div className="dark:bg-lumogray-800 bg-white relative shadow-lg rounded-xl flex flex-col items-start w-full text-lg text-lumogray-600">
-          <div className="flex items-center justify-center w-full">{modalContent}</div>
+        <div className="flex flex-col">
+          <div className="bg-white relative shadow-lg rounded-xl flex flex-col items-start p-2 text-lg text-neutral-800">
+            <button className="self-end m-1 rounded p-[0.125rem] hover:bg-neutral-100" onClick={() => setModal(false)}><XMarkIcon className="w-5 text-neutral-600" strokeWidth={3} /></button>
+            <div className="flex items-center justify-center w-full px-6 pb-6">{modalContent}</div>
+          </div>
         </div>
       </div>,
       document.querySelector("#modal-root")

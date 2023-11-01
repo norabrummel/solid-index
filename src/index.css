@@ -6,6 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 :root { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {

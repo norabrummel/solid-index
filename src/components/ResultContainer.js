@@ -22,7 +22,7 @@ export const ResultContainer = () => {
 
 
     return (
-        <div className='text-lumogray-700'>
+        <div>
             {
                 loadingQuery ? (
                     <Spinner />
@@ -34,9 +34,9 @@ export const ResultContainer = () => {
                                 <div className="overflow-x-auto"> {/* -mx-4 -my-2 sm:-mx-6 lg:-mx-8 */}
                                     <div className="inline-block min-w-full py-2 align-middle">
                                         <div className="overflow-hidden">
-                                            <table className="min-w-full divide-y divide-lumogray-200/40 dark:divide-lumogray-700/40 border-b border-lumogray-200/40 dark:border-lumogray-700/40">
+                                            <table className="min-w-full divide-y border-b">
                                                 <thead className="">
-                                                    <tr className='text-lumogray-700 dark:text-lumogray-100'>
+                                                    <tr>
                                                         <th scope="col" className=" px-3 text-left text-sm font-medium">
                                                             s
                                                         </th>
@@ -51,13 +51,13 @@ export const ResultContainer = () => {
                                                         </th>
                                                     </tr>
                                                 </thead>
-                                                <tbody className="divide-y divide-lumogray-200/40 dark:divide-lumogray-700/40 bg-transparent">
+                                                <tbody className="divide-y bg-transparent">
                                                     {queryResults.map((result, index) => {
                                                         const { s, p, o, source } = result
                                                         return (
                                                             <tr
                                                                 key={index}
-                                                                className='divide-x divide-lumogray-200/40 dark:divide-lumogray-700/40 text-lumogray-800 dark:text-lumogray-50 dark:hover:bg-lumogray-800/40 hover:bg-lumogray-50/40'
+                                                                className='divide-x'
                                                             >
                                                                 <td className="whitespace-nowrap py-2 px-3 text-sm">
                                                                     {s && renderLinkIfURL(s)}
