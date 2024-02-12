@@ -11,7 +11,7 @@ export const AboutSection = () => {
             </div>
             <div prefix='http://xmlns.com/foaf/0.1/' className='mt-6 flex gap-4 items-center justify-end'>
                 <a property='page' href='https://github.com/norabrummel/solid-index' target='_blank' rel="noopener noreferrer"><img property="logo" src={githubIcon} alt='github' className='w-6'/></a>
-                <a property='page' href='https://www.notion.so/Dezentrale-Forschungsinfrastrukturen-und-die-nachhaltige-Zug-nglichkeit-von-Forschungsdaten-6ea0cae11a934b7486b145245eb70ac8?pvs=4' target='_blank' rel="noopener noreferrer"><img property="logo" src={notionIcon} alt='notion' className='w-6'/></a>
+                <a property='page' href='https://decentralized-cultural-heritage.notion.site' target='_blank' rel="noopener noreferrer"><img property="logo" src={notionIcon} alt='notion' className='w-6'/></a>
             </div>
         </div>
     )
